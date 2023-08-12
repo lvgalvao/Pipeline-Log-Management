@@ -1,15 +1,15 @@
-from logging import error, info
+from logger_decorator import logger_decorator
+from logging import error
 
 
+@logger_decorator
 def division(x, y):
-    info("inicio")
     try:
         result = x / y
-        info("fim")
     except ZeroDivisionError:
         error("Não é possível dividir por 0")
         return 0
     except TypeError:
-        error("senha")
+        error("Não é possível dividir por string")
         return 0
     return result

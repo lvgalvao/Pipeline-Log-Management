@@ -1,5 +1,8 @@
-2023-08-12 06:24:58,087 INFO division(5) inicio
-2023-08-12 06:24:58,088 ERROR division(10) Não é possível dividir por 0
-2023-08-12 06:24:58,088 INFO division(5) inicio
-2023-08-12 06:24:58,088 INFO division(8) fim
-2023-08-12 06:24:58,088 INFO division(5) inicio
+2023-08-12 06:52:45,175 INFO wrapper(9) Chamando a função: division
+2023-08-12 06:52:45,175 ERROR division(10) Não é possível dividir por 0
+2023-08-12 06:52:45,175 INFO wrapper(11) Finalizando a função: division
+2023-08-12 06:52:45,175 INFO wrapper(9) Chamando a função: division
+2023-08-12 06:52:45,175 INFO wrapper(11) Finalizando a função: division
+2023-08-12 06:52:45,175 INFO wrapper(9) Chamando a função: division
+2023-08-12 06:52:45,175 ERROR division(13) Não é possível dividir por string
+2023-08-12 06:52:45,175 INFO wrapper(11) Finalizando a função: division

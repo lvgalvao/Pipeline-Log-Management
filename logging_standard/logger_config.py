@@ -13,7 +13,7 @@ def configure_logger():
         "%(asctime)s %(levelname)s %(funcName)s(%(lineno)d) %(message)s"
     )
 
-    file_handler = FileHandler(filename="logs/logging_standard.txt", mode="w")
+    file_handler = FileHandler(filename="logs/logging_standard.log", mode="w")
     file_handler.setLevel(INFO)
     file_handler.setFormatter(format_file_handler)
     file_handler.addFilter(MeuFiltro())

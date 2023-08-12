@@ -1,0 +1,32 @@
+2023-08-12T06:24:42.297095-0300 DEBUG debug message
+2023-08-12T06:24:42.297296-0300 INFO info message
+2023-08-12T06:24:42.297390-0300 WARNING warning message
+2023-08-12T06:24:42.297476-0300 ERROR error message
+2023-08-12T06:24:42.297566-0300 CRITICAL critical message
+2023-08-12T06:30:06.382559-0300 DEBUG debug message main <module> 11
+2023-08-12T06:30:06.382863-0300 INFO info message main <module> 12
+2023-08-12T06:30:06.382984-0300 WARNING warning message main <module> 13
+2023-08-12T06:30:06.383079-0300 ERROR error message main <module> 14
+2023-08-12T06:30:06.383171-0300 CRITICAL critical message main <module> 15
+2023-08-12T06:31:44.512124-0300 INFO inicio operations division 5
+2023-08-12T06:31:44.512439-0300 ERROR Não é possível dividir por 0 operations division 10
+2023-08-12T06:31:44.512573-0300 INFO inicio operations division 5
+2023-08-12T06:31:44.512670-0300 INFO fim operations division 8
+2023-08-12T06:31:44.512766-0300 INFO inicio operations division 5
+2023-08-12T06:31:44.512848-0300 ERROR senha operations division 13
+2023-08-12T06:34:38.898447-0300 INFO inicio operations division 5
+2023-08-12T06:34:38.898919-0300 ERROR Não é possível dividir por 0 operations division 10
+2023-08-12T06:34:38.899070-0300 INFO inicio operations division 5
+2023-08-12T06:34:38.899179-0300 INFO fim operations division 8
+2023-08-12T06:34:38.899287-0300 INFO inicio operations division 5
+2023-08-12T06:35:34.862253-0300 INFO inicio operations division 5
+2023-08-12T06:35:34.862798-0300 ERROR Não é possível dividir por 0 operations division 10
+2023-08-12T06:35:34.862964-0300 INFO inicio operations division 5
+2023-08-12T06:35:34.863083-0300 INFO fim operations division 8
+2023-08-12T06:35:34.863315-0300 INFO inicio operations division 5
+2023-08-12T06:35:34.863663-0300 ERROR senha operations division 13
+2023-08-12T06:35:52.510226-0300 INFO inicio operations division 5
+2023-08-12T06:35:52.510802-0300 ERROR Não é possível dividir por 0 operations division 10
+2023-08-12T06:35:52.510926-0300 INFO inicio operations division 5
+2023-08-12T06:35:52.511034-0300 INFO fim operations division 8
+2023-08-12T06:35:52.511140-0300 INFO inicio operations division 5

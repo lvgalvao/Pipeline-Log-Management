@@ -9,6 +9,7 @@ packages = [{include = "pipeline_log_management"}]
 [tool.poetry.dependencies]
 python = "3.11.3"
 black = "^23.7.0"
+loguru = "^0.7.0"
 
 
 [build-system]

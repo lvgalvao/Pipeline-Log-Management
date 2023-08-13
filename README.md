@@ -1,53 +1,55 @@
-# Sistema de Log para pipelines de dados em Python
+# Sistema de Logging para Pipelines em Python
 
-Este projeto implementa um sistema de log para pipeline de dados em Python. Permitindo que informações sobre sua execução, bem como quaisquer erros, possam ser salvas para análise futura após execução.
+Este projeto implementa um sistema de logging para pipelines de dados em Python. Ele permite que informações sobre sua execução, bem como quaisquer erros que ocorram, sejam salvas de forma organizada e detalhada.
 
-## Funcionalidades
+## Estrutura de Diretório
 
-1. **Configuração do Logger:** Define a configuração padrão para o logger, incluindo o formato das mensagens e os manipuladores.
-2. **Filtro Personalizado:** Um filtro que previne a logagem de mensagens que começam com a palavra "senha".
-3. **Decorador de Logging:** Um decorador que pode ser aplicado a qualquer função para logar informações ao iniciar e concluir a execução da função. Também loga erros automaticamente se ocorrerem durante a execução.
-4. **Função de Divisão:** Um exemplo de função que utiliza o decorador de logging.
+```lua
+Pipeline-Log-Management/
+|-- main.py
+|-- .env
+|-- service/
+|   |-- __init__.py
+|   |-- transformation.py
+|
+|-- utility/
+|   |-- __init__.py
+|   |-- logger_standard/
+|   |   |-- __init__.py
+|   |   |-- logger_config.py
+|   |   |-- logger_decorator.py
+|   |
+|   |-- logger_loguru/
+|   |   |-- __init__.py
+|   |   |-- logger_config.py
+|   |   |-- logger_decorator.py
+|   |
+|   |-- logger_sentry/
+|   |   |-- __init__.py
+|   |   |-- logger_config.py
+|   |   |-- logger_decorator.py
+|
+|-- logs/
+|   |-- (Arquivos de logs gerados)
+|
+```
 
-## Instalação e Execução com Poetry
+## Configurações
 
-Poetry é uma ferramenta para gerenciamento de dependências e empacotamento em Python.
-
-### Pré-requisitos
-
-* Certifique-se de ter o [Poetry](https://python-poetry.org/docs/#installation) instalado.
-
-### Como usar
-
-1. Clone este repositório:
+* **SENTRY**: Se você pretende utilizar o logger do Sentry, insira seu DSN no arquivo `.env` da seguinte forma:
     
-    ```bash
-    git clone [link-do-seu-repositório]
+    ```makefile
+    DSN=seu_dsn_aqui
     ```
     
-2. Navegue até o diretório do projeto:
+    Certifique-se de não compartilhar seu DSN publicamente.
     
-    ```bash
-    cd [nome-do-diretório-do-projeto]
-    ```
+* **Mudança de Logger**: Para utilizar diferentes loggers, você deverá alterar as importações e configurações nos arquivos `main.py` e `service/transformation.py`. Os arquivos de configuração dos loggers estão localizados na pasta `utility`.
     
-3. Instale as dependências do projeto com o Poetry:
-    
-    ```
-    poetry install
-    ```
-    
-    Esta etapa irá criar um ambiente virtual e instalar todas as dependências especificadas no `pyproject.toml`.
-    
-4. Ative o ambiente virtual do Poetry:
-    
-    ```
-    poetry shell
-    ```
-    
-5. Execute o arquivo `main.py` para ver o sistema de logging em ação:
-    
-    ```css
-    python main.py
-    ```
-    
+
+## Como usar
+
+1. Clone este repositório.
+2. Configure o arquivo `.env` com as variáveis de ambiente necessárias.
+3. Certifique-se de ter todas as dependências instaladas.
+4. Execute o arquivo `main.py` para ver o sistema de logging em ação.

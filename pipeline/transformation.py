@@ -1,4 +1,4 @@
-from logger_decorator import logger_decorator
+from log_standard.logger_decorator import logger_decorator
 from logging import error
 
 

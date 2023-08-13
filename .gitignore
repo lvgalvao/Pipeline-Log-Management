@@ -7,6 +7,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#bash
+run_project.sh
+
 # vscode
 .vscode/
 

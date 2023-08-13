@@ -30,3 +30,9 @@
 2023-08-12T06:35:52.510926-0300 INFO inicio operations division 5
 2023-08-12T06:35:52.511034-0300 INFO fim operations division 8
 2023-08-12T06:35:52.511140-0300 INFO inicio operations division 5
+2023-08-13T16:00:50.455407-0300 INFO Chamando a função: division logger_decorator wrapper 6
+2023-08-13T16:00:50.455792-0300 INFO Finalizando a função: division logger_decorator wrapper 9
+2023-08-13T16:00:50.455889-0300 INFO Chamando a função: division logger_decorator wrapper 6
+2023-08-13T16:00:50.455978-0300 INFO Finalizando a função: division logger_decorator wrapper 9
+2023-08-13T16:00:50.456068-0300 INFO Chamando a função: division logger_decorator wrapper 6
+2023-08-13T16:00:50.456187-0300 INFO Finalizando a função: division logger_decorator wrapper 9

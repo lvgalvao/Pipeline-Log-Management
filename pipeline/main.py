@@ -1,6 +1,6 @@
 from logging import basicConfig, DEBUG
-from logger_config import configure_logger
-from operations import division
+from log_standard.logger_config import configure_logger
+from transformation import division
 
 logger = basicConfig(
     level=DEBUG,

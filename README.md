@@ -21,13 +21,13 @@ Poetry é uma ferramenta para gerenciamento de dependências e empacotamento em 
 
 1. Clone este repositório:
     
-    ```perl
+    ```bash
     git clone [link-do-seu-repositório]
     ```
     
 2. Navegue até o diretório do projeto:
     
-    ```arduino
+    ```bash
     cd [nome-do-diretório-do-projeto]
     ```
     

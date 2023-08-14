@@ -2,36 +2,43 @@
 
 Este projeto implementa um sistema de logging para pipelines de dados em Python. Ele permite que informações sobre sua execução, bem como quaisquer erros que ocorram, sejam salvas de forma organizada e detalhada.
 
+## Requisitos
+
+* Python 3.11.3
+* Poetry
+* Docker (Optional)
+
 ## Estrutura de Diretório
 
 ```lua
 Pipeline-Log-Management/
-|-- main.py
-|-- .env
-|-- service/
-|   |-- __init__.py
-|   |-- transformation.py
+|-- Dockerfile
+|-- app/
+|   |-- main.py
+|   |-- .env
+|   |-- service/
+|   |   |-- __init__.py
+|   |   |-- transformation.py
 |
-|-- utility/
-|   |-- __init__.py
-|   |-- logger_standard/
+|   |-- utility/
 |   |   |-- __init__.py
-|   |   |-- logger_config.py
-|   |   |-- logger_decorator.py
+|   |   |-- logger_standard/
+|   |   |   |-- __init__.py
+|   |   |   |-- logger_config.py
+|   |   |   |-- logger_decorator.py
 |   |
-|   |-- logger_loguru/
-|   |   |-- __init__.py
-|   |   |-- logger_config.py
-|   |   |-- logger_decorator.py
+|   |   |-- logger_loguru/
+|   |   |   |-- __init__.py
+|   |   |   |-- logger_config.py
+|   |   |   |-- logger_decorator.py
 |   |
-|   |-- logger_sentry/
-|   |   |-- __init__.py
-|   |   |-- logger_config.py
-|   |   |-- logger_decorator.py
+|   |   |-- logger_sentry/
+|   |   |   |-- __init__.py
+|   |   |   |-- logger_config.py
+|   |   |   |-- logger_decorator.py
 |
 |-- logs/
-|   |-- (Arquivos de logs gerados)
-|
+|   |-- (Generated log files)
 ```
 
 ## Configurações
@@ -49,7 +56,43 @@ Pipeline-Log-Management/
 
 ## Como usar
 
+### Configuração e Execução Tradicional
+
 1. Clone este repositório.
+    
 2. Configure o arquivo `.env` com as variáveis de ambiente necessárias.
-3. Certifique-se de ter todas as dependências instaladas.
-4. Execute o arquivo `main.py` para ver o sistema de logging em ação.
+    
+3. Navegue até o diretório `app`:
+    
+    ```bash
+    cd app
+    ```
+    
+4. Instale as dependências:
+    
+    ```bash
+    poetry install
+    ```
+    
+5. Execute o arquivo `main.py` para ver o sistema de logging em ação:
+    
+    ```bash
+    python main.py
+    ```
+    
+
+### Configuração e Execução com Docker
+
+Se preferir rodar o projeto dentro de um container Docker, siga estes passos:
+
+1. Construa a imagem Docker a partir da raiz do projeto:
+    
+    ```bash
+    docker build -t pipeline-log-management .
+    ```
+    
+2. Execute o projeto dentro de um container Docker:
+    
+    ```bash
+    docker run -e DNS=seu_dsn_aqui pipeline-log-management
+    ```
